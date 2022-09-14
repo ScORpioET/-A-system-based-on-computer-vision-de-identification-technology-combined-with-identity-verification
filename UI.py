@@ -844,7 +844,7 @@ class OperationScreen(QDialog):
             "border-image : url(pa02.jpg);border-top-left-radius:50px;")
         self.exit.setStyleSheet("border-image : url(cross.png);border : none")
         self.blend.setStyleSheet('border-image: url(./avatar/0.png);')
-        self.authentication.setStyleSheet('border-image: url(./verification/0.png);')
+        self.authentication.setStyleSheet('border-image: url(./img/verification/0.png);')
 
         self.GIF = GIFThread()
 
@@ -892,7 +892,7 @@ class OperationScreen(QDialog):
                     return True
                 elif event.type() == QEvent.Leave:
                     self.GIF.stop()
-                    self.authentication.setStyleSheet('border-image: url(./verification/0.png);')
+                    self.authentication.setStyleSheet('border-image: url(./img/verification/0.png);')
                 return False
 
 
@@ -901,7 +901,7 @@ class OperationScreen(QDialog):
         self.blend.setStyleSheet('border-image: url(./avatar/' + str + '.png);')
 
     def changeAuthentication(self,str):
-        self.authentication.setStyleSheet('border-image: url(./verification/' + str + '.png);')
+        self.authentication.setStyleSheet('border-image: url(./img/verification/' + str + '.png);')
 
     def mousePressEvent(self, event):
         if event.button() == Qt.LeftButton:
