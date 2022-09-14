@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1340</width>
+    <height>825</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>310</y>
+     <width>761</width>
+     <height>500</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#pushButton{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.5065682, x2:1, y2:0.477, stop:0 rgba(11, 131, 120, 219), stop:1 rgba(85, 98, 112, 226));
+	color:rgba(255, 255, 255, 210);
+	border-radius:5px;
+}
+QPushButton#pushButton:hover{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.5065682, x2:1, y2:0.477, stop:0 rgba(150, 123, 111, 219), stop:1 rgba(85, 81, 84, 226));
+}
+QPushButton#pushButton:pressed{
+	padding-left:5px;
+	padding-top:5px;
+	background-color:rgba(150, 123, 111, 255);
+}</string>
+   </property>
+   <widget class="QLabel" name="background">
+    <property name="geometry">
+     <rect>
+      <x>159</x>
+      <y>19</y>
+      <width>430</width>
+      <height>430</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:50px;
+border-image: url(:/newPrefix/face.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>69</y>
+      <width>60</width>
+      <height>330</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgba(0,0,0,50);
+border-top-left-radius:50px;
+border-bottom-left-radius:50px;
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="uploadBTN">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>90</y>
+      <width>42</width>
+      <height>42</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#uploadBTN{
+	border-radius : 10px;
+	border-image: url(:/newPrefix/upload.png);
+}
+QPushButton#uploadBTN:hover{
+	border-radius : 10px;
+	border-image: url(:/newPrefix/brown upload.png);
+}
+QPushButton#uploadBTN::pressed{
+	border-radius : 10px;
+	border-image: url(:/newPrefix/white upload.png);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="refreshBTN">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>140</y>
+      <width>42</width>
+      <height>42</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#refreshBTN{
+	border-radius : 10px;
+	border-image: url(:/newPrefix/refresh.png);
+}
+QPushButton#refreshBTN:hover{
+	border-radius : 10px;
+	border-image: url(:/newPrefix/brown refresh.png);
+}
+QPushButton#refreshBTN::pressed{
+	border-radius : 10px;
+	border-image: url(:/newPrefix/white refresh.png);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="saveBTN">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>190</y>
+      <width>42</width>
+      <height>42</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#saveBTN{
+	border-radius : 10px;
+	border-image: url(:/newPrefix/save.png);
+}
+QPushButton#saveBTN:hover{
+	border-radius : 10px;
+	border-image: url(:/newPrefix/brown save.png);
+}
+QPushButton#saveBTN::pressed{
+	border-radius : 10px;
+	border-image: url(:/newPrefix/white save.png);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="saveqrBTN">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>240</y>
+      <width>42</width>
+      <height>42</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#saveqrBTN{
+	border-radius : 10px;
+	border-image: url(:/newPrefix/qr.png);
+}
+QPushButton#saveqrBTN:hover{
+	border-radius : 10px;
+	border-image: url(:/newPrefix/brown qr.png);
+}
+QPushButton#saveqrBTN::pressed{
+	border-radius : 10px;
+	border-image: url(:/newPrefix/white qr.png);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="backpageBTN">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>290</y>
+      <width>42</width>
+      <height>42</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#nextpageBTN{
+	border-radius : 10px;
+	border-image: url(:/newPrefix/rarrow.png);
+}
+QPushButton#nextpageBTN:hover{
+	border-radius : 10px;
+	border-image: url(:/newPrefix/brown rarrow.png);
+}
+QPushButton#nextpageBTN::pressed{
+	border-radius : 10px;
+	border-image: url(:/newPrefix/white rarrow.png);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="homeBTN">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>340</y>
+      <width>42</width>
+      <height>42</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#nextpageBTN{
+	border-radius : 10px;
+	border-image: url(:/newPrefix/rarrow.png);
+}
+QPushButton#nextpageBTN:hover{
+	border-radius : 10px;
+	border-image: url(:/newPrefix/brown rarrow.png);
+}
+QPushButton#nextpageBTN::pressed{
+	border-radius : 10px;
+	border-image: url(:/newPrefix/white rarrow.png);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exit">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>40</y>
+      <width>10</width>
+      <height>10</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#exit{
+background-image: url(:/images/254-2545026_delete-button-nor-white-cross-icon-png-removebg-preview.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="loading">
+    <property name="geometry">
+     <rect>
+      <x>325</x>
+      <y>190</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="security">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>320</y>
+      <width>140</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-top-right-radius:30px;
+border-bottom-right-radius:30px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="placeholder.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2000</width>
+    <height>1976</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>280</y>
+     <width>680</width>
+     <height>500</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#pushButton{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.5065682, x2:1, y2:0.477, stop:0 rgba(11, 131, 120, 219), stop:1 rgba(85, 98, 112, 226));
+	color:rgba(255, 255, 255, 210);
+	border-radius:5px;
+}
+QPushButton#pushButton:hover{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.5065682, x2:1, y2:0.477, stop:0 rgba(150, 123, 111, 219), stop:1 rgba(85, 81, 84, 226));
+}
+QPushButton#pushButton:pressed{
+	padding-left:5px;
+	padding-top:5px;
+	background-color:rgba(150, 123, 111, 255);
+}</string>
+   </property>
+   <widget class="QLabel" name="FaceBG">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>30</y>
+      <width>330</width>
+      <height>430</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/images/pa02.jpg);
+border-top-left-radius:50px;
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>30</y>
+      <width>270</width>
+      <height>430</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgba(255, 255, 255, 255);
+border-bottom-right-radius: 50px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>30</y>
+      <width>330</width>
+      <height>430</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgba(0,0,0,50);
+border-top-left-radius:50px;
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>455</x>
+      <y>80</y>
+      <width>100</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgba(0,0,0,200);</string>
+    </property>
+    <property name="text">
+     <string>登入</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="username">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>150</y>
+      <width>190</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei</family>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgba(0,0,0,0);
+border:none;
+border-bottom:2px solid rgba(46,82,101,200);
+padding-bottom:7px;</string>
+    </property>
+    <property name="placeholderText">
+     <string>帳號</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="password">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>215</y>
+      <width>190</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgba(0,0,0,0);
+border:none;
+border-bottom:2px solid rgba(46,82,101,200);
+padding-bottom:7px;</string>
+    </property>
+    <property name="placeholderText">
+     <string>密碼</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="enter">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>295</y>
+      <width>190</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#enter{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:1, stop:0 rgba(11, 131, 120, 219), stop:1 rgba(85, 98, 112, 226));
+	color:rgba(255,255,255,210);
+	border-radius:5px;
+}
+QPushButton#enter:hover{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.505682, x2:1, y2:1, stop:0 rgba(150, 123, 111, 219), stop:1 rgba(85, 81, 84, 226));
+}
+QPushButton#enter:pressed{
+	padding-left:5px;
+	padding-top:5px;
+	background-color:rgba(150,123,111,255)
+}
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>登入</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ForgetPassword">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>340</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei</family>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#ForgetPassword{
+	color: rgb(26, 115, 232);
+	background-color: rgb(255, 255, 255);
+	border:none;
+}
+QPushButton#ForgetPassword:pressed{
+	color:rgb(101,0,152);
+	background-color: rgb(255, 255, 255);
+	border:none;
+}</string>
+    </property>
+    <property name="text">
+     <string>忘記密碼?</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exit">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>40</y>
+      <width>10</width>
+      <height>10</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/newPrefix/cross.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="warning">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>260</y>
+      <width>191</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei UI</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="placeholder.qrc"/>
+ </resources>
+ <connections/>
+</ui>
