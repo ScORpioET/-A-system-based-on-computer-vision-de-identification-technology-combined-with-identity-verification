@@ -29,6 +29,6 @@
 
 ## 範例
 ### 轉換前
-![image](origin.png)
+![image](original.png)
 ### 轉換後
 ![image](out.png)
