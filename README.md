@@ -15,7 +15,7 @@
 ### De-identification
 透過Dlib提供的機器學習方法偵測人臉的106的特徵點，並利用特徵點將眉毛、鼻子、嘴巴這些臉部器官隨機替換成別人的器官，來達成去識別化的效果。
 ### Authentication
-利用Chang等學者提出的魔術矩陣(https://link.springer.com/article/10.1007/s11042-019-7252-x)來達成資料隱藏的效果。
+利用Chang等學者提出的魔術矩陣 (https://link.springer.com/article/10.1007/s11042-019-7252-x) 來達成資料隱藏的效果。
 
 
 ## 設備
